@@ -1,5 +1,3 @@
-# Create your grading script here
-
 #set -e
 
 rm -rf student-submission
@@ -16,6 +14,7 @@ then
     echo "$FILE1 exists."
 else 
     echo "$FILE1 not found."
+    echo "Grade: 0"
     exit 1
 fi
 
@@ -24,8 +23,10 @@ javac -cp $CPATH *.java
 if [[ $? -eq 0 ]]
 then 
     echo "Compile Succeeded."
+    #echo "Grade: 100"
 else
     echo "Compile Failed."
+    echo "Grade: 0"
     exit 1
 fi
 

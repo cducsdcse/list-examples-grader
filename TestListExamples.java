@@ -10,6 +10,11 @@ public class TestListExamples {
     assertEquals(5,5);
   }
 
+  @Test
+  public void testLE2(){
+    assertEquals(13,13);
+  }
+  /*
   @Test 
   public void testFilter() {
     String[] str = {"abc","abcd","edcba","a"};
@@ -17,5 +22,8 @@ public class TestListExamples {
     String[] str2 ={"abcd","edcba"};
     List<String> exp = Arrays.asList(str2);
     assertEquals(exp, ListExamples.filter(lst,new LongerThan3()));
-}
+  }
+  */
+
+
 }
